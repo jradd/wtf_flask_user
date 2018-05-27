@@ -1,0 +1,9 @@
+{% extends "main/main_base.html" %}  {# main/main_base.html extends layout.html #}
+
+{% block content %}
+<h2>{%trans%}Upload {%endtrans%}</h2>
+<form method="POST" action="/upload" enctype="multipart/form-data">
+        {{ form.photo }}
+        <input type="submit" value="Upload">
+</form>
+{% endblock %}
